@@ -5,6 +5,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+@pytest.mark.google_search
 def test_google_search():
     service = Service(ChromeDriverManager().install())
     options = webdriver.ChromeOptions()
