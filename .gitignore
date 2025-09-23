@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pkl
+*.log
+*.sqlite3
+
+# pytest キャッシュ
+.pytest_cache/
+
+# Virtual Environment
+.venv/
+env/
+venv/
+ENV/
+
+# VSCode
+.vscode/
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Selenium/WebDriver
+chromedriver
+geckodriver
+*.exe
+
+# Test outputs
+#tests/screenshots/
+#tests/data/*.xlsx
+#tests/data/*.csv
+#tests/data/*.json
+
+# Python packaging
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# その他一時ファイル
+*.log
