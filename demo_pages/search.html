@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>検索デモ</title>
+</head>
+<body>
+    <form id="search-form">
+        <input type="text" id="search-box" name="q" placeholder="検索ワードを入力">
+        <button type="submit" id="search-button">検索</button>
+    </form>
+    <div id="results"></div>
+
+    <script>
+        const form = document.getElementById("search-form");
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+            const query = document.getElementById("search-box").value;
+            const results = document.getElementById("results");
+            results.innerHTML = `<p>検索結果: 「${query}」 に一致するページ</p>`;
+        });
+    </script>
+</body>
+</html>
