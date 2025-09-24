@@ -12,7 +12,7 @@ import time
 def driver():
     options = webdriver.ChromeOptions()
     # GUI表示させたい場合は headless コメントアウト
-    # options.add_argument("--headless")
+    options.add_argument("--headless")
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
     yield driver
     driver.quit()
