@@ -45,4 +45,6 @@ build/
 .eggs/
 
 # その他一時ファイル
-*.log
+*.logreports/
+
+reports/
