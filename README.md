@@ -77,3 +77,7 @@ CI/CD、HTMLレポートの生成と保存を確認
 
 ### 4. 自作HTML検索テスト（ローカル）
 ![自作HTML検索テスト](tests/screenshots/screenshot_search_Selenium_Python.png)
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
