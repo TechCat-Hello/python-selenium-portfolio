@@ -1,6 +1,6 @@
-# Python Selenium ポートフォリオ: 自作HTML検索テストとCI/CD
+# Python Selenium : 自作HTML検索テストとCI/CD
 
-このプロジェクトは、Python と Selenium を用いたテスト自動化スキルをアピールするために作成したポートフォリオです。  
+このリポジトリでは、Python と Selenium を活用したテスト自動化の手法を実装例としてまとめています。  
 特に以下のスキルを示しています：
 
 - Page Object Model によるテストの保守性向上（Issue #3）
