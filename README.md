@@ -1,7 +1,7 @@
-# Python Selenium : 自作HTML検索テストとCI/CD
+# Python Selenium Portfolio: テスト自動化 & CI/CD
 
-このリポジトリでは、Python と Selenium を活用したテスト自動化の手法を実装例としてまとめています。  
-特に以下のスキルを示しています：
+このリポジトリは、**Python と Selenium を活用したテスト自動化のベストプラクティス**を実装したポートフォリオです。  
+CI/CD環境を構築し、以下のスキルセットを実証しています：
 
 - Page Object Model によるテストの保守性向上（Issue #3）
 - 外部データ駆動テスト（CSV/Excel/JSON）で複数ケースを効率的にテスト（Issue #5）
@@ -16,6 +16,7 @@
 - Selenium
 - pytest
 - pytest-html
+- webdriver-manager
 - GitHub Actions（CI/CD）
 - Page Object Model（テスト設計パターン）
 
@@ -52,7 +53,6 @@ pytest --html=reports/report.html --self-contained-html
 ## GitHub Actions CI
 - ブランチに push すると自動でテストが実行されます。
 - HTMLレポートはアーティファクトとして保存されます。
-- Ubuntu 上でヘッドレスブラウザにより Selenium が実行されます。
 
 ## 実施済み Issue / PR
 ### Issue #3: POMによる検索テストリファクタリング
@@ -62,14 +62,14 @@ pytest --html=reports/report.html --self-contained-html
 CSV/Excel/JSONで複数ケースのテストを実施
 
 ### Issue #7: テスト結果HTML化 & GitHub Actions自動実行
-CI/CD、HTMLレポートの生成と保存を確認
+CI/CD、HTMLレポートの生成とアーティファクト保存を確認
 
 ## スクリーンショット
 
 ### 1. GitHub Actions 成功画面
 ![GitHub Actions 成功](tests/screenshots/github-actions_success_overview.png)
 
-### 2. HTMLレポートのブラウザ表示 (GitHub Actions Ubuntu 環境で自動作成)
+### 2. HTMLレポートのブラウザ表示 (GitHub Actions Ubuntu環境で自動作成)
 ![HTMLレポート概要](tests/screenshots/pytest_html_report_browser_view.png)
 
 ### 3. HTMLレポート概要（ローカル）
@@ -81,3 +81,7 @@ CI/CD、HTMLレポートの生成と保存を確認
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## 📮 Author
+TechCat  
+GitHub: https://github.com/TechCat-Hello
